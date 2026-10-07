@@ -1,0 +1,11 @@
+{
+  "name": "themandys",
+  "private": true,
+  "scripts": {
+    "preview": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.40.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "themandys",
+  "compatibility_date": "2026-10-07",
+  "workers_dev": true,
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "themandys.com", "custom_domain": true },
+    { "pattern": "www.themandys.com", "custom_domain": true }
+  ]
+}

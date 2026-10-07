@@ -1,0 +1,256 @@
+@charset utf-8;
+
+/* CSS Document */
+
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	background:url(../images/interface/background.jpg) repeat-y top center;
+	font-family:Georgia, Times New Roman, Times, serif;
+}
+
+strong {
+	font-weight:bold;
+}
+
+h2 {
+	font-size:1.4em;
+	font-style:italic;
+	color:#FF9933;
+	padding:1.5em 0 0;
+}
+
+h3 {
+	font-size:1.2em;
+	font-style:italic;
+	color:#3E3E3E;
+	padding:1em 0 0;
+	font-weight:bold;
+}
+
+p {
+	font-size:1.1em;
+	padding:1em 0 0;
+	line-height:1.4;
+	color:#3E3E3E;
+}
+
+a {
+	color:#3E3E3E;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#000;
+}
+
+#wrapper {
+	width:1014px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:70px;
+}
+
+#logo {
+	margin-top:20px;
+}
+
+.bodywrapper {
+	position:relative;
+	width:1014px;
+	margin:50px 0 0;
+	background:url(../images/interface/content-body-slice.png) repeat-y 0 0;
+}
+
+.frame-top {
+	background:url(../images/interface/frame-top.png) no-repeat 0 0;
+	position:absolute;
+	height:43px;
+	width:1014px;
+	top:-43px;
+	left:0;
+	z-index:10;
+}
+
+.frame-top-left {
+	background:url(../images/interface/frame-top-left.png) no-repeat 0 0;
+	position:absolute;
+	height:339px;
+	width:15px;
+	top:-43px;
+	left:0;
+}
+
+.frame-top-right {
+	background:url(../images/interface/frame-top-right.png) no-repeat top right;
+	position:absolute;
+	height:339px;
+	width:18px;
+	top:-56px;
+	right:2px;
+}
+
+.frame-bottom {
+	background:url(../images/interface/frame-bottom.png) no-repeat 0 0;
+	position:absolute;
+	height:48px;
+	width:1014px;
+	bottom:-48px;
+	left:0px;
+}
+
+.frame-bottom-right {
+	background:url(../images/interface/frame-bottom-right.png) no-repeat bottom right;
+	position:absolute;
+	height:268px;
+	width:22px;
+	bottom:-30px;
+	right:2px;
+}
+
+.frame-bottom-left {
+	background:url(../images/interface/frame-bottom-left.png) no-repeat 0 0;
+	position:absolute;
+	height:252px;
+	width:19px;
+	bottom:-30px;
+	left:0;
+}
+
+#nav {
+	width:944px;
+	height:60px;
+	margin:0 37px 0 32px;
+	position:relative;
+	padding-top:10px;
+	background:url(../images/interface/nav-bg.png) no-repeat 0 12px;
+}
+
+#nav li.last {
+	background:none;
+}
+
+.content {
+	min-height:300px;
+	width:945px;
+	padding:20px 39px 20px 33px;
+}
+
+.content a {
+	color:#FF9933;
+}	
+
+/* Styles for the entire LavaLamp menu */
+.lavaLamp {
+	position: relative;
+	height: 48px;
+	width: 938px;
+	padding: 3px 3px;
+	margin-left:2px;
+}
+
+/* Force the list to flow horizontally */
+.lavaLamp li {
+	float: left;
+	list-style: none;
+}
+
+/* Represents the background of the highlighted menu-item. */
+.lavaLamp li.back {
+	background: url(../images/interface/lava.png) no-repeat right -48px;
+	width: 13px;
+	height: 48px;
+	z-index: 8;
+	position: absolute;
+}
+
+.lavaLamp li.back .left {
+	background: url(../images/interface/lava.png) no-repeat top left;
+	height: 48px;
+	margin-right: 11px;
+}
+
+/* Styles for each menu-item. */
+.lavaLamp li a {
+	position: relative;
+	font: 1.4em Georgia;
+	color: #3e3e3e;
+	outline: none;
+	text-align: center;
+	height: 42px;
+	z-index: 10;
+	letter-spacing: 0;
+	float: left;
+	display: block;
+	margin: auto 25px auto 25px;
+	padding:10px 0 0;
+}
+
+* .lavaLamp li a {
+	display: inline;
+}
+
+.lavaLamp li.last {
+	margin-left:1px;
+}
+
+.content-left {
+	width:445px;
+	float:left;
+	padding-bottom:25px;
+}
+
+.content-right {
+	width:445px;
+	float:right;
+	padding-left:30px;
+	border-left:solid 1px #E8E8E8;
+	padding-bottom:25px;
+}
+
+.pictures {
+	clear:both;
+	padding-top:20px;
+}
+
+.date {
+	color:#CCCCCC;
+	font-style:italic;
+	font-size:12px;
+	padding:0.4em 0 0 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+.themandys, .thecastle {
+	position:absolute;
+	top:35px;
+	right:64px;
+	z-index:0;
+}
+
+.thecastle {
+	top:25px;
+}
